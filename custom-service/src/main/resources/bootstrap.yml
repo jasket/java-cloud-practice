@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: custom-service
+
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URI}
