@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: registry-service
+
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URI}
