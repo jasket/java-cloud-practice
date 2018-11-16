@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: practice-proxy
+
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URI}
