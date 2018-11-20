@@ -1,0 +1,15 @@
+version: '3'
+services:
+  practice_config:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "7000:8080"
+    expose:
+      - "7000"
+    environment:
+      - "PORT=8080"
+      - "SPRING_PROFILES_ACTIVE=docker"
+      - "CONFIG_GIT_URL=${CONFIG_GIT_URL}"
+      - "TZ=Europe/Moscow"

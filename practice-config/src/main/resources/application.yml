@@ -1,9 +1,2 @@
 server:
   port: ${PORT}
-
-spring:
-  cloud:
-    config:
-      server:
-        git:
-          uri: ${CONFIG_GIT_URL}

@@ -1,0 +1,14 @@
+version: '3'
+services:
+  practice_registry:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "7001:8080"
+    expose:
+      - "7001"
+    environment:
+      - "PORT=8080"
+      - "CONFIG_SERVER_URI=${CONFIG_SERVER_URI}"
+      - "TZ=Europe/Moscow"
